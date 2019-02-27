@@ -1,23 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:id="@+id/pickerToolbar"
-    android:background="#1296db"
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pickerToolbar"
     android:layout_width="match_parent"
-    android:layout_height="50dp"
-    xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView
-        android:src="@drawable/icon_back"
-        android:id="@+id/reback_ImageView"
-        android:layout_marginStart="5dp"
-        android:layout_width="25dp"
-        android:layout_height="match_parent" />
-    <TextView
-        android:text="图片"
-        android:textColor="#ffffff"
-        android:textStyle="bold"
-        android:textSize="18sp"
-        android:singleLine="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_centerVertical="true"/>
-</RelativeLayout>
+    android:layout_height="wrap_content"
+    android:minHeight="?attr/actionBarSize"
+    android:background="?attr/colorPrimary"
+    app:theme="?attr/actionBarTheme"
+    app:popupTheme="?attr/actionBarPopupTheme"
+    tools:ignore="ResourceName">
+
+</android.support.v7.widget.Toolbar>

@@ -189,13 +189,10 @@ public class PhotoPickerActivity extends AppCompatActivity {
         mCxt = this;
         captureManager = new ImageCaptureManager(mCxt);
         // ActionBar Setting
-        ImageView reback=this.findViewById(R.id.reback_ImageView);
-        reback.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
+        Toolbar toolbar = (Toolbar) findViewById(R.id.pickerToolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle(getResources().getString(R.string.image));
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         mGridView = (GridView) findViewById(R.id.grid);
         mGridView.setNumColumns(getNumColnums());
